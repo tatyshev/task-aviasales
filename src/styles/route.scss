@@ -1,0 +1,58 @@
+.b-route {
+  display: flex;
+  align-items: flex-start;
+}
+
+.b-route__path {
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 1px solid #d2d5d6;
+  margin: 0 12px;
+  padding: 7px 0;
+  padding-right: 5px;
+  position: relative;
+  font-size: 13px;
+  color: #8B9497;
+
+  &:after {
+    background-color: #fff;
+    background-image: url('/plain.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 15px;
+    height: 13px;
+    transform: translateY(7px);
+  }
+}
+
+.b-route__path-transfers {
+  width: 100%;
+}
+
+.b-route__path-line {
+  flex-grow: 1;
+  height: 1px;
+  background: #d2d5d6;
+}
+
+.b-route__path-plane {
+  transform: translateY(-50%);
+}
+
+.b-route__time {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.b-route__location {
+  font-size: 12px;
+}
+
+.b-route__date {
+  font-size: 12px;
+  color: #8B9497;
+}

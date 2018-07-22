@@ -1,7 +1,7 @@
 import React, { ReactChildren } from 'react';
 
 interface ITicketsProps {
-  children?: JSX.Element | JSX.Element[];
+  children?: JSX.Element[];
 }
 
 export default ({ children }: ITicketsProps) => (

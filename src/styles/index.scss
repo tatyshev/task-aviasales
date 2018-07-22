@@ -4,6 +4,7 @@
 @import './ticket';
 @import './tickets';
 @import './widget';
+@import './route';
 
 html {
   box-sizing: border-box;
@@ -16,5 +17,7 @@ html {
 body {
   background-color: #f3f7fa;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #4A4A4A;
 }
