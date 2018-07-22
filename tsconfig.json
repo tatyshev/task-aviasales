@@ -5,9 +5,9 @@
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
-    "baseUrl": "."
-  },
-  "paths": {
-    "@/*": ["app/*"]
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }
