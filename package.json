@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "poi"
+  },
   "author": "Ruslan Tatyshev <@tatyshev>",
   "license": "MIT",
   "devDependencies": {
-    "poi": "^10.2.9"
+    "@poi/plugin-typescript": "^10.2.0",
+    "poi": "^10.2.9",
+    "typescript": "^2.9.2"
   }
 }
