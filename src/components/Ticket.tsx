@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className='b-ticket'>
+  <div className='b-widget b-ticket'>
     Ticket
   </div>
 );

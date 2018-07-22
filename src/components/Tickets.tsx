@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactChildren } from 'react';
 
-export default () => (
+interface ITicketsProps {
+  children?: JSX.Element | JSX.Element[];
+}
+
+export default ({ children }: ITicketsProps) => (
   <div className='b-tickets'>
-    Tickets
+    {children}
   </div>
 );

@@ -18,10 +18,11 @@
 }
 
 .b-application__sidebar {
-  border: 1px solid red;
+  // border: 1px solid red;
+  padding-right: 20px;
 }
 
 .b-application__content {
-  border: 1px solid green;
+  // border: 1px solid green;
   flex-grow: 1;
 }

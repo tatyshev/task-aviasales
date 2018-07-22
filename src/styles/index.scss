@@ -3,6 +3,15 @@
 @import './filterset';
 @import './ticket';
 @import './tickets';
+@import './widget';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   background-color: #f3f7fa;

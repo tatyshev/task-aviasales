@@ -1,3 +1,6 @@
+import Filterset from '@/components/Filterset';
+import Ticket from '@/components/Ticket';
+import Tickets from '@/components/Tickets';
 import React from 'react';
 
 export default () => (
@@ -17,11 +20,15 @@ export default () => (
     <div className='b-application__body'>
       <div className='b-container'>
         <div className='b-application__sidebar'>
-          Sidebar
+          <Filterset/>
         </div>
 
         <div className='b-application__content'>
-          Content
+          <Tickets>
+            <Ticket/>
+            <Ticket/>
+            <Ticket/>
+          </Tickets>
         </div>
       </div>
     </div>
