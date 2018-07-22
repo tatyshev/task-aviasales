@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "poi --open",
+    "build": "poi build",
     "lint": "tslint src/**/*.ts src/**/*.tsx"
   },
   "author": "Ruslan Tatyshev <@tatyshev>",
