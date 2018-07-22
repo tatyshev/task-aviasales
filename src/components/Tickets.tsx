@@ -1,4 +1,4 @@
-import React, { ReactChildren } from 'react';
+import React from 'react';
 
 interface ITicketsProps {
   children?: JSX.Element[];
