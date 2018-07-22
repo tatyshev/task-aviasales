@@ -1,4 +1,5 @@
 import Currency from '@/components/Currency';
+import Transfers from '@/components/Transfers';
 import React from 'react';
 
 export default () => (
@@ -6,6 +7,11 @@ export default () => (
     <div className='b-filterset__group'>
       <div className='b-filterset__title'>Валюта</div>
       <Currency value='RUB'/>
+    </div>
+
+    <div className='b-filterset__group'>
+      <div className='b-filterset__title'>Количество пересадок</div>
+      <Transfers/>
     </div>
   </div>
 );
