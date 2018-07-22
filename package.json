@@ -10,7 +10,12 @@
   "license": "MIT",
   "devDependencies": {
     "@poi/plugin-typescript": "^10.2.0",
+    "node-sass": "^4.9.2",
     "poi": "^10.2.9",
+    "sass-loader": "^7.0.3",
     "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }
