@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "poi"
+    "start": "poi --open",
+    "lint": "tslint src/**/*.ts src/**/*.tsx"
   },
   "author": "Ruslan Tatyshev <@tatyshev>",
   "license": "MIT",
