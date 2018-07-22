@@ -9,3 +9,19 @@
 .b-application__logo {
   margin-top: 50px;
 }
+
+.b-application__body {
+  .b-container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.b-application__sidebar {
+  border: 1px solid red;
+}
+
+.b-application__content {
+  border: 1px solid green;
+  flex-grow: 1;
+}

@@ -16,7 +16,13 @@ export default () => (
 
     <div className='b-application__body'>
       <div className='b-container'>
-        Application
+        <div className='b-application__sidebar'>
+          Sidebar
+        </div>
+
+        <div className='b-application__content'>
+          Content
+        </div>
       </div>
     </div>
   </div>
