@@ -5,5 +5,8 @@
   "main": "index.js",
   "scripts": {},
   "author": "Ruslan Tatyshev <@tatyshev>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "poi": "^10.2.9"
+  }
 }
