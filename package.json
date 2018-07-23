@@ -23,7 +23,11 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
+    "@types/lodash.noop": "^3.0.3",
+    "@types/lodash.uniq": "^4.5.3",
     "classnames": "^2.2.6",
+    "lodash.noop": "^3.0.1",
+    "lodash.uniq": "^4.5.0",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
