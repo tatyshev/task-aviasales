@@ -1,5 +1,6 @@
 .b-currency {
   display: flex;
+  margin: 13px 0;
 }
 
 .b-currency__input {
@@ -28,7 +29,7 @@
 
 .b-currency__button {
   position: relative;
-  padding: 10px 5px;
+  padding: 13px 5px 11px;
   width: 100%;
   border: 1px solid #d2d5d6;
   cursor: pointer;

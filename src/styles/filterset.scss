@@ -2,12 +2,18 @@
   width: 232px;
   height: 331px;
   padding: 15px;
+
+  .b-transfers {
+    margin: 0 -15px;
+  }
 }
 
 .b-filterset__group {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
 .b-filterset__title {
-  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 3px 0 11px;
 }
