@@ -1,3 +1,4 @@
+import { ITicket } from './interfaces';
 export interface IAction<T> {
   type: string;
   payload: T;
@@ -17,4 +18,10 @@ export interface ITicket {
   carrier: string;
   stops: number;
   price: number;
+}
+
+export interface IState {
+  currency: INullStr;
+  transfers: INullStr;
+  tickets: ITicket[];
 }

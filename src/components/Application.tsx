@@ -1,14 +1,15 @@
 import Filterset from '@/components/Filterset';
-import Ticket from '@/components/Ticket';
 import Tickets from '@/components/Tickets';
 import state from '@/state';
 import { setTickets } from '@/state/actions';
 import { ITicket } from '@/state/interfaces';
+
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 
 const TICKETS_URL = 'https://raw.githubusercontent.com/KosyanMedia/test-tasks/master/aviasales/tickets.json';
 
-export default class Application extends Component<{}, {}> {
+class Application extends Component<{}, {}> {
   componentWillMount() {
     this.fetchTickets().then((tickets) => {
       state.dispatch(setTickets(tickets));
@@ -43,11 +44,7 @@ export default class Application extends Component<{}, {}> {
             </div>
 
             <div className='b-application__content'>
-              <Tickets>
-                <Ticket/>
-                <Ticket/>
-                <Ticket/>
-              </Tickets>
+              <Tickets/>
             </div>
           </div>
         </div>
@@ -55,3 +52,9 @@ export default class Application extends Component<{}, {}> {
     );
   }
 }
+
+export default () => (
+  <Provider store={state}>
+    <Application/>
+  </Provider>
+);

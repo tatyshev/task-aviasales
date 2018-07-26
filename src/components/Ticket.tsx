@@ -1,7 +1,12 @@
 import Route from '@/components/Route';
+import { ITicket } from '@/state/interfaces';
 import React from 'react';
 
-export default () => (
+interface ITicketProps {
+  ticket: ITicket;
+}
+
+export default ({ ticket }: ITicketProps) => (
   <div className='b-widget b-ticket'>
     <div className='b-ticket__offer'>
       <img
@@ -17,7 +22,7 @@ export default () => (
     </div>
 
     <div className='b-ticket__details'>
-      <Route/>
+      <Route ticket={ticket}/>
     </div>
   </div>
 );

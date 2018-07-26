@@ -31,6 +31,7 @@
     "lodash.noop": "^3.0.1",
     "lodash.uniq": "^4.5.0",
     "normalize.css": "^8.0.0",
+    "plural-ru": "^2.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
