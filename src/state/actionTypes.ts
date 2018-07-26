@@ -1,0 +1,3 @@
+export const SET_CURRENCY = 'UPDATE_CURRENCY';
+export const SET_TRANSFERS = 'CHANGE_TRANSFERS';
+export const SET_TICKETS = 'CHANGE_TRANSFERS';
