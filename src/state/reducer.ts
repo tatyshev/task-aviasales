@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { IAction, INullStr, ITicket } from './interfaces';
 
 import {
   SET_CURRENCY,
@@ -6,33 +7,12 @@ import {
   SET_TRANSFERS,
 } from '@/state/actionTypes';
 
-interface IAction<T> {
-  type: string;
-  payload: T;
-}
-
-type NullStr = string | null;
-
-interface ITicket {
-  origin: string;
-  origin_name: string;
-  destination: string;
-  destination_name: string;
-  departure_date: string;
-  departure_time: string;
-  arrival_date: string;
-  arrival_time: string;
-  carrier: string;
-  stops: number;
-  price: number;
-}
-
-const currency = (state: NullStr = null, { type, payload }: IAction<string>) => {
+const currency = (state: INullStr = null, { type, payload }: IAction<string>) => {
   if (type === SET_CURRENCY) { return payload; }
   return state;
 };
 
-const transfer = (state: NullStr = null, { type, payload }: IAction<string>) => {
+const transfer = (state: INullStr = null, { type, payload }: IAction<string>) => {
   if (type === SET_TRANSFERS) { return payload; }
   return state;
 };

@@ -1,3 +1,3 @@
-export const SET_CURRENCY = 'UPDATE_CURRENCY';
-export const SET_TRANSFERS = 'CHANGE_TRANSFERS';
-export const SET_TICKETS = 'CHANGE_TRANSFERS';
+export const SET_CURRENCY = 'SET_CURRENCY';
+export const SET_TRANSFERS = 'SET_TRANSFERS';
+export const SET_TICKETS = 'SET_TICKETS';
