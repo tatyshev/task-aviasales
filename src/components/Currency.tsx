@@ -1,40 +1,50 @@
+import { setCurrency } from '@/state/actions';
+import { IState } from '@/state/interfaces';
 import cn from 'classnames';
 import React, { ChangeEvent } from 'react';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-interface IProps {
+interface ICurrencyProps {
   value?: string;
-  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (value: string) => void;
 }
 
 const VALUES = ['RUB', 'USD', 'EUR'];
 
-const renderItem = (current: string, props: IProps) => {
+const renderItem = (current: string, props: ICurrencyProps) => {
   const isActive = current === props.value;
+  const handleChange = () => props.onChange && props.onChange(current);
 
   return (
-    <label className='b-currency__label' key={current}>
-      <input
-        className='b-currency__input'
-        type='radio'
-        name='currency'
-        value={current}
-        defaultChecked={isActive}
-        onChange={props.onChange}
-      />
-
+    <div className='b-currency__label' key={current}>
       <button
         className={cn('b-currency__button', {
           'b-currency__button--active': isActive,
         })}
+
+        onClick={handleChange}
       >
         {current}
       </button>
-    </label>
+    </div>
   );
 };
 
-export default (props: IProps) => (
+const Currency = (props: ICurrencyProps) => (
   <div className='b-currency'>
     {VALUES.map((val) => renderItem(val, props))}
   </div>
 );
+
+const mapStateToProps = (state: IState) => ({
+  value: state.currency,
+});
+
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  onChange: (value: string) => {
+    dispatch(setCurrency(value));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Currency);

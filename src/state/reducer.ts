@@ -7,7 +7,7 @@ import {
   SET_TRANSFERS,
 } from '@/state/actionTypes';
 
-const currency = (state: INullStr = null, { type, payload }: IAction<string>) => {
+const currency = (state: INullStr = 'RUB', { type, payload }: IAction<string>) => {
   if (type === SET_CURRENCY) { return payload; }
   return state;
 };
