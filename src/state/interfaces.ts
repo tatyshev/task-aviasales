@@ -1,10 +1,11 @@
 import { ITicket } from './interfaces';
+
 export interface IAction<T> {
   type: string;
   payload: T;
 }
 
-export type INullStr = string | null | undefined;
+export type INullStr = string | null;
 
 export interface ITicket {
   origin: string;
