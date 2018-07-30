@@ -6,7 +6,8 @@
   "scripts": {
     "start": "poi --open",
     "build": "poi build",
-    "lint": "tslint src/**/*.ts src/**/*.tsx"
+    "lint": "tslint src/**/*.ts src/**/*.tsx",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Ruslan Tatyshev <@tatyshev>",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "@types/react-dom": "^16.0.6",
     "@types/react-redux": "^6.0.5",
     "@types/redux": "^3.6.0",
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2",
     "poi": "^10.2.9",
     "sass-loader": "^7.0.3",
