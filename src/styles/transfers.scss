@@ -2,6 +2,7 @@
 }
 
 .b-transfers__item {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 8px 15px;
@@ -58,7 +59,10 @@
 
 .b-transfers__only {
   transition: opacity 200ms 100ms;
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
   background: transparent;
   border: 0;
   padding: 0;
@@ -67,4 +71,5 @@
   font-size: 11px;
   cursor: pointer;
   opacity: 0;
+  padding: 10px;
 }

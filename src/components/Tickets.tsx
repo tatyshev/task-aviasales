@@ -1,5 +1,6 @@
 import Ticket from '@/components/Ticket';
 import { IState, ITicket } from '@/state/interfaces';
+import { filteredTickets } from '@/state/selectors';
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -14,7 +15,7 @@ const Tickets = ({ tickets = [] }: ITicketsProps) => (
 );
 
 const mapStateToProps = (state: IState) => ({
-  tickets: state.tickets,
+  tickets: filteredTickets(state),
 });
 
 export default connect(mapStateToProps)(Tickets);
