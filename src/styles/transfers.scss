@@ -10,6 +10,10 @@
 
   &:hover {
     background: #f1fcff;
+
+    .b-transfers__only {
+      opacity: 1;
+    }
   }
 }
 
@@ -31,12 +35,6 @@
       position: absolute;
       top: 5px;
       left: 8px;
-    }
-  }
-
-  &:hover {
-    .b-transfers__only {
-      opacity: 1;
     }
   }
 }

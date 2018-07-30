@@ -1,6 +1,8 @@
 import { ITicket } from '@/state/interfaces';
 import plural from 'plural-ru';
 import React from 'react';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
 interface IRouteProps {
   ticket: ITicket;

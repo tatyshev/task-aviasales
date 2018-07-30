@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { IAction, INullStr, ITicket } from './interfaces';
+import { IAction, INullStr, IState, ITicket } from './interfaces';
 
 import {
   SET_CURRENCY,
@@ -7,12 +7,12 @@ import {
   SET_TRANSFERS,
 } from '@/state/actionTypes';
 
-const currency = (state: INullStr = 'RUB', { type, payload }: IAction<string>) => {
+const currency = (state: INullStr = 'RUB', { type, payload }: IAction<INullStr>) => {
   if (type === SET_CURRENCY) { return payload; }
   return state;
 };
 
-const transfer = (state: INullStr = null, { type, payload }: IAction<string>) => {
+const transfers = (state: number[] = [0, 1, 2, 3], { type, payload }: IAction<number[]>) => {
   if (type === SET_TRANSFERS) { return payload; }
   return state;
 };
@@ -22,8 +22,8 @@ const tickets = (state: ITicket[] = [], { type, payload }: IAction<ITicket[]>) =
   return state;
 };
 
-export default combineReducers({
+export default combineReducers<IState>({
   currency,
-  transfer,
+  transfers,
   tickets,
 });

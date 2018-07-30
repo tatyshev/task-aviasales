@@ -5,7 +5,7 @@ export const setCurrency = (currency: INullStr) => {
   return { type: SET_CURRENCY, payload: currency };
 };
 
-export const setTransfers = (transfers: INullStr) => {
+export const setTransfers = (transfers: number[]) => {
   return { type: SET_TRANSFERS, payload: transfers };
 };
 

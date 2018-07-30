@@ -1,7 +1,7 @@
 import { setCurrency } from '@/state/actions';
 import { IState } from '@/state/interfaces';
 import cn from 'classnames';
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 

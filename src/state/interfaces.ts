@@ -4,7 +4,7 @@ export interface IAction<T> {
   payload: T;
 }
 
-export type INullStr = string | null;
+export type INullStr = string | null | undefined;
 
 export interface ITicket {
   origin: string;
@@ -22,6 +22,6 @@ export interface ITicket {
 
 export interface IState {
   currency: INullStr;
-  transfers: INullStr;
+  transfers: number[];
   tickets: ITicket[];
 }
