@@ -7,7 +7,7 @@
     "start": "poi --open",
     "build": "poi build",
     "lint": "tslint src/**/*.ts src/**/*.tsx",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "poi build && gh-pages -d dist"
   },
   "author": "Ruslan Tatyshev <@tatyshev>",
   "license": "MIT",
