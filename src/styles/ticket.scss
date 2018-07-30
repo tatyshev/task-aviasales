@@ -49,3 +49,40 @@
   flex-grow: 1;
   padding: 15px;
 }
+
+@include device-until(800px) {
+  .b-ticket {
+    flex-direction: column-reverse;
+  }
+
+  .b-ticket__offer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-top: 1px solid #eceff1;
+  }
+
+  .b-ticket__button {
+    width: auto;
+    padding: 5px 20px;
+    margin-left: 20px;
+    white-space: nowrap;
+  }
+
+  .b-ticket__provider {
+    margin: 0;
+  }
+}
+
+@include device-until(630px) {
+  .b-ticket__button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .b-ticket__provider {
+    display: none;
+  }
+}

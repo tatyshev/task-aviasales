@@ -1,0 +1,21 @@
+@mixin device-between ($from: null, $until: null) {
+  $query: "screen";
+
+  @if ($from) {
+    $query: "#{$query} and (min-width: #{$from})";
+  }
+
+  @if ($until) {
+    $query: "#{$query} and (max-width: #{$until})";
+  }
+
+  @media #{$query} { @content; }
+}
+
+@mixin device-from($device) {
+  @include device-between($from: $device) { @content; }
+}
+
+@mixin device-until($device) {
+  @include device-between($until: $device) { @content; }
+}
