@@ -30,11 +30,15 @@
   flex-grow: 1;
 }
 
-// @include device-until(800px) {
-//   .b-application__body {
-//     .b-container {
-//       flex-direction: column;
-//       align-items: flex-grow;
-//     }
-//   }
-// }
+@include device-until(585px) {
+  .b-application__body {
+    .b-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .b-application__sidebar {
+    padding: 0;
+  }
+}

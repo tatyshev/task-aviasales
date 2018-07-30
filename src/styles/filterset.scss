@@ -17,3 +17,9 @@
   text-transform: uppercase;
   margin: 3px 0 11px;
 }
+
+@include device-until(585px) {
+  .b-filterset {
+    width: 100%;
+  }
+}
