@@ -1,4 +1,4 @@
-## Тестовое задание Aviasales ([front-end](https://github.com/KosyanMedia/test-tasks/tree/master/aviasales))
+## Тестовое задание Aviasales ([Demo](https://tatyshev.github.io/task-aviasales/))
 
 * Typescript / React
 * Рендер билетов
