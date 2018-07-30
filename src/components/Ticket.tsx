@@ -6,6 +6,10 @@ interface ITicketProps {
   ticket: ITicket;
 }
 
+const numberWithSpaces = (x: number) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+};
+
 export default ({ ticket }: ITicketProps) => (
   <div className='b-widget b-ticket'>
     <div className='b-ticket__offer'>
@@ -20,7 +24,7 @@ export default ({ ticket }: ITicketProps) => (
 
       <button className='b-ticket__button'>
         <div className='b-ticket__buy'>Купить</div>
-        <div className='b-ticket__price'>за {ticket.price} &#8381;</div>
+        <div className='b-ticket__price'>за {numberWithSpaces(ticket.price)} &#8381;</div>
       </button>
     </div>
 
